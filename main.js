@@ -3,7 +3,7 @@ const crypto = require('crypto');
 const pprof = require('pprof');
 const fs = require('fs');
 
-// original code is from https://nodejs.org/en/docs/guides/simple-profiling/
+// original code came from https://nodejs.org/en/docs/guides/simple-profiling/
 
 async function prof() {
   console.log("start to profile >>>");
