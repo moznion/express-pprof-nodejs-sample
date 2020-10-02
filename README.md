@@ -18,7 +18,12 @@ $ ab -k -c 20 -n 250 'http://localhost:8080/auth?username=matt&password=password
 ### Analyze the profiling result
 
 ```
-pprof -http=: wall.pb.gz
+# download pprof
+$ go get -u github.com/google/pprof
+
+# view result
+$ pprof -http=: wall.pb.gz
+# or ~/go/bin/pprof -http=: wall.pb.gz
 ```
 
 ## References
