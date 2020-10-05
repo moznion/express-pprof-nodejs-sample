@@ -27,6 +27,12 @@ $ pprof -http=: wall.pb.gz
 # or ~/go/bin/pprof -http=: wall.pb.gz
 ```
 
+## Note
+
+- it requires `Long` type support
+  - so this project depends on the `long` and `@types/long` packages
+  - and configure the `types` to support the `long` in [tsconfig.json](./tsconfig.json)
+
 ## References
 
 - https://github.com/google/pprof-nodejs
